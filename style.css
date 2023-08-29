@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color-purple: #28264b;
+    --white-color : #f1f1f1;
+    --black-color: #000000;
+}
+
+html{
+    background-color: var(--background-color-purple);
+}
+
+.challenge-06{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: var(--background-color-purple);
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.pricing-tables {
+    background-color: var(--white-color);
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 35px var(--black-color);
+}
+
+.pricing-tables{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.table-01-top-btn, .table-01-price, .table-01-mid-btn, .table-02-top-btn, .table-02-price, .table-02-mid-btn, 
+.table-03-top-btn, .table-03-price, .table-03-mid-btn{
+    text-align: center;
+    position: relative;
+}
+
+.dollar-span{
+    position: absolute;
+    left: 40%;
+}
+
+.dollar-span-2{
+    position: absolute;
+    left: 28%;
+}
+
+.dollar-span-3{
+    position: absolute;
+    left: 23%;
+}
+
+.table-01-top-btn, .table-02-top-btn, .table-03-top-btn{
+    margin-bottom: 45px;
+}
+
+.table-01-top-btn button{
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+}
+
+.table-02-top-btn button{
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    background: rgb(194,206,255);
+    background: linear-gradient(90deg, rgba(194,206,255,1) 0%, rgba(180,119,253,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.table-02-top-btn, .table-02-price, .table-02-mid-btn{
+    text-align: center;
+}
+
+.table-03-top-btn button{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    background: linear-gradient(90deg, rgba(255,180,190,1) 0%, rgba(255,200,126,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+:where(.table-01-price, .table-02-price, .table-03-price) h2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+:where(.table-01-price, .table-02-price, .table-03-price) h3 {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+:where(.table-01-price, .table-02-price, .table-03-price) h4 {
+    margin-bottom: 45px;
+}
+
+.table-01-mid-btn button{
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+.list-items-table-01 li:nth-child(1)::marker, .list-items-table-02 li::marker, .list-items-table-03 li::marker {
+    content: "✔️";
+}
+
+.list-items-table-01 li:not(:nth-child(1))::marker {
+    content: "❌";
+}
+
+ul li {
+    padding-bottom: 20px;
+}
+
+.list-items-table-01 , .list-items-table-02 , .list-items-table-03{
+    margin-left: 20px;
+}
+
+.table-02-mid-btn button, .table-03-mid-btn button{
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 10px 0 ;
+    font-weight: bold;
+}
+
+.table-01-mid-btn button , .table-02-mid-btn button , .table-03-mid-btn button {
+    border: 1px solid var(--background-color-purple);
+    color: var(--background-color-purple);
+    border-radius: 8px;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+
+.table-02-mid-btn button{
+    background: var(--background-color-purple);
+    color: var(--white-color);
+}
+
+
+
+
